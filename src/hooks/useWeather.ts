@@ -1,6 +1,7 @@
 import {formatForecast} from "../lib/metno";
 import {useGeolocation} from "./useGeolocation";
 import useFetch from "use-http";
+import {Interceptors} from "use-http/dist/cjs/types";
 
 const options = {
     interceptors: {
@@ -12,7 +13,7 @@ const options = {
 
             return response
         }
-    },
+    } as Interceptors,
 }
 
 export const useWeather = () => {
