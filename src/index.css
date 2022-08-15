@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    10% {
+      transform: rotate(360deg);
+    }
+
+    19.9% {
+      transform: rotate(720deg);
+    }
+
+    20% {
+      transform: rotate(0deg);
+    }
+
+    40% {
+      transform: rotate(360deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+    }
+
+    60% {
+      transform: rotate(300deg);
+    }
+
+    70% {
+      transform: rotate(250deg);
+    }
+
+    80% {
+      transform: rotate(310deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin {
+    animation-name: spin;
+    animation-duration: 4500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
